@@ -3,5 +3,7 @@
     <string name="tela_login">Tela de Login</string>
     <string name="btn_login">Logar</string>
     <string name="btn_sair">Sair</string>
-    <string name="txt_cadatrar">Cadastrar usuário</string>
+    <string name="txt_cadastrar">Cadastrar usuário</string>
+    <string name="title_cadastrar">CADASTRO DE USUÁRIO</string>
+    <string name="txt_voltar">Voltar</string>
 </resources>

@@ -11,10 +11,13 @@ public interface UsuarioDao {
     @Query("SELECT * from usuario WHERE login=:login AND senha=:senha")
     public Usuario getUserLogin(String login, String senha);
 
+    @Query("SELECT * from usuario WHERE login=:login")
+    public Usuario checkDuplicated(String login);
+
     @Query("SELECT * from usuario")
     public List<Usuario> getAll();
 
     @Insert
-    public void insereUsuario(Usuario usuario);
+    public long insereUsuario(Usuario usuario);
 
 }

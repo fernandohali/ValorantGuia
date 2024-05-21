@@ -13,7 +13,10 @@
         android:theme="@style/Theme.LoginApp"
         tools:targetApi="31">
         <activity
-            android:name=".TelaPrincipalAdmin"
+            android:name=".Cadastro"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPrincipal.TelaPrincipalAdmin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

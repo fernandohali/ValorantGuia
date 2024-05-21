@@ -10,16 +10,11 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.room.Room;
 
+import com.example.loginapp.TelaPrincipal.TelaPrincipalAdmin;
 import com.example.loginapp.database.DataBase;
 import com.example.loginapp.database.Usuario;
-import com.example.loginapp.database.UsuarioDao;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     // *******************************************************************
@@ -34,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     // *******************************************************************
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        insereDadosUsuario();
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -53,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Adicionar os eventos
         txtCadastrar.setOnClickListener((View view)->{ // FORMA MODERNA - LAMBDA FUNCTION
-                Toast.makeText(MainActivity.this,"Cadastrar Usuário",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this,Cadastro.class);
+            startActivity(intent);
         });
         btnLogin.setOnClickListener((View view)->{ // FORMA MODERNA - LAMBDA FUNCTION
             logar();
@@ -81,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         // mudança de tela
-        Intent intent = new Intent(this,TelaPrincipalAdmin.class);
+        Intent intent = new Intent(this, TelaPrincipalAdmin.class);
         startActivity(intent);
     }
     private boolean validarCampos(){
@@ -100,20 +96,5 @@ public class MainActivity extends AppCompatActivity {
         Usuario usuario = db.getUserDao().getUserLogin(login,senha);
         if (usuario==null) return false;
         return true;
-    }
-    private void insereDadosUsuario(){
-        DataBase db = Room.databaseBuilder(getApplicationContext(),DataBase.class,"Base de Dados").allowMainThreadQueries().build();
-        List<Usuario> listaUsuarios = db.getUserDao().getAll();
-        if (!listaUsuarios.isEmpty()) return; // abandona
-
-        // insere os dados
-        for(int i=1;i<=10;i++){
-            Usuario usuario = new Usuario();
-            usuario.id=i;
-            usuario.login="user"+i;
-            usuario.senha="master"+i;
-            db.getUserDao().insereUsuario(usuario);
-        }
-
     }
 }
