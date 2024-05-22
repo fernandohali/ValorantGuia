@@ -1,4 +1,4 @@
-package com.example.loginapp;
+package com.example.valorantguia;
 
 import org.junit.Test;
 
