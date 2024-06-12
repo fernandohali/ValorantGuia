@@ -10,7 +10,7 @@ public class NetworkExample {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://www.vavaguiavalorant.com");
+                    URL url = new URL("https://fernandohali.github.io/ValorantGuia/");
                     HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                     urlConnection.setRequestMethod("GET");
 
