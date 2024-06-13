@@ -1,15 +1,17 @@
 <resources>
     <string name="app_name">Valorant Guia</string>
-
     <string name="edit_login">LOGIN</string>
     <string name="edit_senha">SENHA</string>
-
     <string name="txt_login">LOGIN</string>
     <string name="txt_senha">SENHA</string>
-
     <string name="btn_login">LOGAR</string>
     <string name="btn_sair">Sair</string>
-
     <string name="txt_cadastrar">Cadastrar usuário</string>
     <string name="txt_voltar">Voltar</string>
+
+    <string name="txt_vavaGuia">VAVA GUIA</string>
+    <string name="txt_agentes">AGESNTES</string>
+
+    <string name="btnHome">Home</string>
+    <string name="btnAgentes">Agentes</string>
 </resources>

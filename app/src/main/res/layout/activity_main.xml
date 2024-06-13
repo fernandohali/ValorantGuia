@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-18dp"
+    tools:layout_editor_absoluteY="9dp">
 
     <ImageView
         android:id="@+id/img"
@@ -24,27 +26,27 @@
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/Valorant_Font"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/valorant_font"
         android:text="@string/txt_login"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img" />
+        app:layout_constraintBottom_toTopOf="@+id/editLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.5" />
 
     <EditText
         android:id="@+id/editLogin"
         android:layout_width="378dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/edit_login"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLogin"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -53,28 +55,30 @@
         android:id="@+id/txtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/Valorant_Font"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/valorant_font"
         android:text="@string/txt_senha"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editSenha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editLogin"
+        app:layout_constraintVertical_bias="0.5"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editSenha"
         android:layout_width="378dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/edit_senha"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSenha"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -83,11 +87,12 @@
         android:id="@+id/btnLogin"
         android:layout_width="342dp"
         android:layout_height="54dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="@font/Valorant_Font"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/valorant_font"
         android:text="@string/btn_login"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSenha" />
 
