@@ -10,8 +10,21 @@
     <string name="txt_voltar">Voltar</string>
 
     <string name="txt_vavaGuia">VAVA GUIA</string>
-    <string name="txt_agentes">AGESNTES</string>
+    <string name="txt_agents">AGESNTS</string>
 
-    <string name="btnHome">Home</string>
-    <string name="btnAgentes">Agentes</string>
+    <string name="btnHome">HOME</string>
+    <string name="btnAgents">AGENTS</string>
+
+    <string name="app_nameYoutube">VAVA Guia</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="btn_news">NEWS</string>
+    <string name="txt_news">NEWS</string>
+
+    <string name="btn_menu">MENU</string>
+
+    <string name="btn_logout">LOGOUT</string>
+
+
 </resources>

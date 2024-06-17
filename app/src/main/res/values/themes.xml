@@ -3,7 +3,14 @@
     <style name="Base.Theme.ValorantGuia" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
     </style>
 
     <style name="Theme.ValorantGuia" parent="Base.Theme.ValorantGuia" />
+
+    <style name="DialogAnimarion">
+        <item name="android:windowEnterAnimation">@anim/slide_ind</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
 </resources>

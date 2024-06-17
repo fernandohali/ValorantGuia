@@ -6,7 +6,12 @@
         android:icon="@drawable/ic_home_nav_map"
         android:title="@string/btnHome" />
     <item
-        android:id="@+id/agentes"
+        android:id="@+id/agents"
         android:icon="@drawable/ic_drawer_nav"
-        android:title="@string/btnAgentes" />
+        android:title="@string/btnAgents" />
+
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/btn_menu" />
 </menu>
