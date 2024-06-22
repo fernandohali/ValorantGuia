@@ -3,4 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#101823</color>
+
+    <color name="color_button_normal_maps_sunset">#99FF0026</color> <!-- Cor normal do botão -->
+    <color name="color_button_pressed_maps_sunset">#F60008</color> <!-- Cor do botão quando pressionado -->
+
+<!--    <color name="color_button_normal_maps_pearl">#9900FAFA</color> &lt;!&ndash; Cor normal do botão &ndash;&gt;-->
+<!--    <color name="color_button_pressed_maps_pearl">#00FAFA</color> &lt;!&ndash; Cor do botão quando pressionado &ndash;&gt;-->
+
+    <color name="color_button_normal_maps_icebox">#CC00FAFA</color> <!-- Cor normal do botão -->
+    <color name="color_button_pressed_maps_icebox">#C400FAFA</color> <!-- Cor do botão quando pressionado -->
 </resources>

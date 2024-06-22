@@ -7,11 +7,11 @@
         android:title="@string/btnHome" />
     <item
         android:id="@+id/agents"
-        android:icon="@drawable/ic_drawer_nav"
+        android:icon="@drawable/iconvalorant"
         android:title="@string/btnAgents" />
 
     <item
         android:id="@+id/nav_menu"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/drawermenu"
         android:title="@string/btn_menu" />
 </menu>

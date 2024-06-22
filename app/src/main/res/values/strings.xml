@@ -9,10 +9,10 @@
     <string name="txt_cadastrar">Cadastrar usuário</string>
     <string name="txt_voltar">Voltar</string>
 
-    <string name="txt_vavaGuia">VAVA GUIA</string>
+    <string name="txt_vavaGuia">MAPAS</string>
     <string name="txt_agents">AGESNTS</string>
 
-    <string name="btnHome">HOME</string>
+    <string name="btnHome">MAPAS</string>
     <string name="btnAgents">AGENTS</string>
 
     <string name="app_nameYoutube">VAVA Guia</string>
@@ -25,6 +25,20 @@
     <string name="btn_menu">MENU</string>
 
     <string name="btn_logout">LOGOUT</string>
+
+    <string name="btn_maps_sunset">SUNSET</string>
+    <!--    <string name="btn_maps_pearl">PEARL</string>-->
+    <string name="btn_maps_icebox">ICEBOX</string>
+    <string name="btn_maps_bind">BIND</string>
+    <string name="btn_maps_ascent">ASCENT</string>
+    <string name="btn_maps_split">SPLIT</string>
+
+
+    <string name="txt_button_sunset">01 SUNSET</string>
+    <string name="txt_button_icebox">02 ICEBOX</string>
+    <string name="txt_button_bind">03 BIND</string>
+    <string name="txt_button_ascent">04 ASCENT</string>
+    <string name="txt_button_split">05 SPLIT</string>
 
 
 </resources>
