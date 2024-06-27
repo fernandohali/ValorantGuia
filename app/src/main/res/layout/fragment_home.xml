@@ -57,7 +57,7 @@
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button_click_effect_maps_pearl"
+                    android:background="@drawable/button_click_effect_maps_sunset"
                     android:contentDescription="@string/btn_maps_sunset"
                     tools:ignore="ImageContrastCheck" />
 
@@ -88,7 +88,7 @@
                     tools:ignore="ImageContrastCheck" />
 
                 <TextView
-                    ndroid:fontFamily="@font/valorant_font"
+                    android:fontFamily="@font/valorant_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -108,7 +108,7 @@
 
                 <ImageButton
                     android:id="@+id/imageButton4"
-                    ndroid:fontFamily="@font/valorant_font"
+                    android:fontFamily="@font/valorant_font"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_click_effect_maps_bind"
@@ -135,7 +135,7 @@
 
                 <ImageButton
                     android:id="@+id/imageButton5"
-                    ndroid:fontFamily="@font/valorant_font"
+                    android:fontFamily="@font/valorant_font"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_click_effect_maps_ascent"
@@ -169,11 +169,10 @@
                     tools:ignore="ImageContrastCheck" />
 
                 <TextView
-                    ndroid:fontFamily="@font/valorant_font"
+                    android:fontFamily="@font/valorant_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/valorant_font"
                     android:padding="8dp"
                     android:text="@string/txt_button_split"
                     android:textColor="@android:color/white"
