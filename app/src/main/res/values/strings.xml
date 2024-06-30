@@ -40,5 +40,36 @@
     <string name="txt_button_ascent">04 ASCENT</string>
     <string name="txt_button_split">05 SPLIT</string>
 
+    <string name="title_activity_bind">bindActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="agents_brimstone">BRIMSTONE</string>
+    <string name="agents_phoenix">PHOENIX</string>
+    <string name="agents_sage">SAGE</string>
+    <string name="agents_sova">SOVA</string>
+    <string name="agents_viper">VIPER</string>
+    <string name="agents_cypher">CYPHER</string>
+    <string name="agents_reyna">REYNA</string>
+    <string name="agents_killjoy">KILLJOY</string>
+    <string name="agents_breach">BREACH</string>
+    <string name="agents_omen">OMEN</string>
+    <string name="agents_jett">JETT</string>
+    <string name="agents_raze">RAZE</string>
+    <string name="agents_skye">SKYE</string>
+    <string name="agents_yoru">YORU</string>
+    <string name="agents_astra">ASTRA</string>
+    <string name="agents_kayo">KAY/O</string>
+    <string name="agents_chamber">CHAMBER</string>
+    <string name="agents_neon">NEON</string>
+    <string name="agents_fade">FADE</string>
+    <string name="agents_harbor">HARBOR</string>
+    <string name="agents_gekko">GEKKO</string>
+    <string name="agents_deadlock">DEADLOCK</string>
+    <string name="agents_iso">ISO</string>
+    <string name="agents_clove">CLOVE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

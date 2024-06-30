@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,23 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ValorantGuia"
-        tools:targetApi="31">
-
-        <!-- Declaração da MainActivity -->
+        tools:targetApi="31" >
+        <activity
+            android:name=".maps.bind.bindMapa"
+            android:exported="false" />
+        <activity
+            android:name=".maps.bind.bindmapa"
+            android:exported="false" />
+        <activity
+            android:name=".maps.bind.bind_mapa"
+            android:exported="false" /> <!-- Declaração da MainActivity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Declaração da TelaPrincipalActivity -->
+        </activity> <!-- Declaração da TelaPrincipalActivity -->
         <activity
             android:name=".TelaPrincipalActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true" />
     </application>
+
 </manifest>
