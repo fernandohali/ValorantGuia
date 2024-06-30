@@ -11,9 +11,27 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.valorantguia.R;
+import com.example.valorantguia.maps.AgentsMapas.AgentsAstra;
+import com.example.valorantguia.maps.AgentsMapas.AgentsBreach;
 import com.example.valorantguia.maps.AgentsMapas.AgentsBrimstone;
+import com.example.valorantguia.maps.AgentsMapas.AgentsChamber;
+import com.example.valorantguia.maps.AgentsMapas.AgentsCypher;
+import com.example.valorantguia.maps.AgentsMapas.AgentsDeadlock;
+import com.example.valorantguia.maps.AgentsMapas.AgentsFade;
+import com.example.valorantguia.maps.AgentsMapas.AgentsGekko;
+import com.example.valorantguia.maps.AgentsMapas.AgentsHardor;
+import com.example.valorantguia.maps.AgentsMapas.AgentsJett;
+import com.example.valorantguia.maps.AgentsMapas.AgentsKayo;
+import com.example.valorantguia.maps.AgentsMapas.AgentsKilljoy;
+import com.example.valorantguia.maps.AgentsMapas.AgentsNeon;
+import com.example.valorantguia.maps.AgentsMapas.AgentsOmen;
 import com.example.valorantguia.maps.AgentsMapas.AgentsPhoenix;
+import com.example.valorantguia.maps.AgentsMapas.AgentsReyna;
 import com.example.valorantguia.maps.AgentsMapas.AgentsSage;
+import com.example.valorantguia.maps.AgentsMapas.AgentsSkye;
+import com.example.valorantguia.maps.AgentsMapas.AgentsSova;
+import com.example.valorantguia.maps.AgentsMapas.AgentsViper;
+import com.example.valorantguia.maps.AgentsMapas.AgentsYoru;
 
 public class sunsetMapa extends AppCompatActivity {
 
@@ -33,24 +51,24 @@ public class sunsetMapa extends AppCompatActivity {
         setupAgentButton(R.id.btnBrimstoneSunset, AgentsBrimstone.class);
         setupAgentButton(R.id.btnphoenixSunset, AgentsPhoenix.class);
         setupAgentButton(R.id.btnSageSunset, AgentsSage.class);
-//        setupAgentButton(R.id.btnSovaSunset, AgentsSova.class);
-//        setupAgentButton(R.id.btnViperSunset, AgentsViper.class);
-//        setupAgentButton(R.id.btnCypherSunset, AgentsCypher.class);
-//        setupAgentButton(R.id.btnReynaSunset, AgentsReyna.class);
-//        setupAgentButton(R.id.btnKilljoySunset, AgentsKilljoy.class);
-//        setupAgentButton(R.id.btnOmenSunset, AgentsOmen.class);
-//        setupAgentButton(R.id.btnJettSunset, AgentsJett.class);
-//        setupAgentButton(R.id.btnBreachSunset, BreachAgents.class);
-//        setupAgentButton(R.id.btnSkyeSunset, AgentsSkye.class);
-//        setupAgentButton(R.id.btnYoruSunset, AgentsYoru.class);
-//        setupAgentButton(R.id.btnAstraSunset, AgentsAstra.class);
-//        setupAgentButton(R.id.btnKayoSunset, AgentsKayo.class);
-//        setupAgentButton(R.id.btnChamberSunset, ChamberAgents.class);
-//        setupAgentButton(R.id.btnNeonSunset, NeonAgents.class);
-//        setupAgentButton(R.id.btnFadeSunset, FadeAgents.class);
-//        setupAgentButton(R.id.btnHardorSunset, HardorAgents.class);
-//        setupAgentButton(R.id.btnGekkoSunset, GekkoAgents.class);
-//        setupAgentButton(R.id.btnDeadlockSunset, DeadlockAgents.class);
+        setupAgentButton(R.id.btnSovaSunset, AgentsSova.class);
+        setupAgentButton(R.id.btnViperSunset, AgentsViper.class);
+        setupAgentButton(R.id.btnCypherSunset, AgentsCypher.class);
+        setupAgentButton(R.id.btnReynaSunset, AgentsReyna.class);
+        setupAgentButton(R.id.btnKilljoySunset, AgentsKilljoy.class);
+        setupAgentButton(R.id.btnOmenSunset, AgentsOmen.class);
+        setupAgentButton(R.id.btnJettSunset, AgentsJett.class);
+        setupAgentButton(R.id.btnBreachSunset, AgentsBreach.class);
+        setupAgentButton(R.id.btnSkyeSunset, AgentsSkye.class);
+        setupAgentButton(R.id.btnYoruSunset, AgentsYoru.class);
+        setupAgentButton(R.id.btnAstraSunset, AgentsAstra.class);
+        setupAgentButton(R.id.btnKayoSunset, AgentsKayo.class);
+        setupAgentButton(R.id.btnChamberSunset, AgentsChamber.class);
+        setupAgentButton(R.id.btnNeonSunset, AgentsNeon.class);
+        setupAgentButton(R.id.btnFadeSunset, AgentsFade.class);
+        setupAgentButton(R.id.btnHardorSunset, AgentsHardor.class);
+        setupAgentButton(R.id.btnGekkoSunset, AgentsGekko.class);
+        setupAgentButton(R.id.btnDeadlockSunset, AgentsDeadlock.class);
     }
 
     private void setupAgentButton(int buttonId, final Class<?> agentClass) {
