@@ -1,4 +1,4 @@
-package com.example.valorantguia.maps.bind;
+package com.example.valorantguia.maps.AgentsMapas;
 
 import android.os.Bundle;
 
@@ -10,13 +10,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.valorantguia.R;
 
-public class bindMapa extends AppCompatActivity {
+public class AgentsSage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_mapa_bind);
+        setContentView(R.layout.activity_agents_sage);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

@@ -53,7 +53,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/btnMapaSunset"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -80,7 +80,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/btnMapaIcebox"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_click_effect_maps_icebox"
@@ -134,7 +134,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/btnMapaAscent"
                     android:fontFamily="@font/valorant_font"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/btnMapaSplit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/button_click_effect_maps_split"

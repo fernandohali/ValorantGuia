@@ -30,7 +30,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.legacy.support.v4
     implementation libs.lifecycle.livedata.ktx
     implementation libs.lifecycle.viewmodel.ktx
@@ -47,6 +46,8 @@ dependencies {
     testImplementation "androidx.room:room-testing:$room_version"
     // optional - Paging 3 Integration
     implementation "androidx.room:room-paging:$room_version"
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 
     implementation libs.appcompat
     implementation libs.material

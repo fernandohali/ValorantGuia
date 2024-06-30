@@ -11,6 +11,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.valorantguia.R;
 import com.example.valorantguia.maps.bind.bindMapa;
+import com.example.valorantguia.maps.sunset.sunsetMapa;
+import com.example.valorantguia.maps.icebox.iceboxMapa;
+import com.example.valorantguia.maps.ascent.ascentMapa;
+import com.example.valorantguia.maps.split.splitMapa;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +23,7 @@ import com.example.valorantguia.maps.bind.bindMapa;
  */
 public class HomeFragment extends Fragment {
 
-    ImageButton btnMapaBind;
+    ImageButton btnMapaBind, btnMapaSunset, btnMapaIcebox, btnMapaAscent, btnMapaSplit;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -54,15 +58,19 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Encontrar o ImageButton pelo ID no layout inflado
+        // Encontrar os ImageButton pelos IDs no layout inflado
         btnMapaBind = view.findViewById(R.id.btnMapaBind);
+        btnMapaSunset = view.findViewById(R.id.btnMapaSunset);
+        btnMapaIcebox = view.findViewById(R.id.btnMapaIcebox);
+        btnMapaAscent = view.findViewById(R.id.btnMapaAscent);
+        btnMapaSplit = view.findViewById(R.id.btnMapaSplit);
 
-        // Configurar o listener do ImageButton
-
-
-        btnMapaBind.setOnClickListener(v -> {
-            bindMapaClic();
-        });
+        // Configurar os listeners dos ImageButtons
+        btnMapaBind.setOnClickListener(v -> bindMapaClic());
+        btnMapaSunset.setOnClickListener(v -> sunsetMapaClic());
+        btnMapaIcebox.setOnClickListener(v -> iceboxMapaClic());
+        btnMapaAscent.setOnClickListener(v -> ascentMapaClic());
+        btnMapaSplit.setOnClickListener(v -> splitMapaClic());
 
         return view;
     }
@@ -72,5 +80,23 @@ public class HomeFragment extends Fragment {
         startActivity(intent);
     }
 
+    private void sunsetMapaClic() {
+        Intent intent = new Intent(requireActivity(), sunsetMapa.class);
+        startActivity(intent);
+    }
 
+    private void iceboxMapaClic() {
+        Intent intent = new Intent(requireActivity(), iceboxMapa.class);
+        startActivity(intent);
+    }
+
+    private void ascentMapaClic() {
+        Intent intent = new Intent(requireActivity(), ascentMapa.class);
+        startActivity(intent);
+    }
+
+    private void splitMapaClic() {
+        Intent intent = new Intent(requireActivity(), splitMapa.class);
+        startActivity(intent);
+    }
 }

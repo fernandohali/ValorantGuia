@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,7 +13,76 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ValorantGuia"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".maps.AgentsMapas.AgentsSage"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.AgentsPhoenix"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.AgentsBrimstone"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.AgentsAstra"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.KayoAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.AstraAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.YoruAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.SkyeAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.AgentsBreach"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.JettAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.OmenAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.KilljoyAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.ReynaAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.CypherAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.ViperAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.SovaAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.SageAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.AgentsMapas.PhoenixAgents"
+            android:exported="false" />
+        <activity
+            android:name=".maps.split.splitMapa"
+            android:exported="false" />
+        <activity
+            android:name=".maps.icebox.iceboxMapa"
+            android:exported="false" />
+        <activity
+            android:name=".maps.ascent.ascentMapa"
+            android:exported="false" />
+        <activity
+            android:name=".maps.sunset.sunsetMapa"
+            android:exported="false" />
+        <activity
+            android:name=".sunsetmapa"
+            android:exported="false" />
         <activity
             android:name=".maps.bind.bindMapa"
             android:exported="false" />
@@ -25,7 +94,7 @@
             android:exported="false" /> <!-- Declaração da MainActivity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
