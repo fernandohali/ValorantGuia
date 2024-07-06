@@ -55,14 +55,7 @@ public class AgentsFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        ImageButton btnVoltar = view.findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Código para voltar à tela anterior
-                getActivity().onBackPressed();
-            }
-        });
+
 
     }
 
