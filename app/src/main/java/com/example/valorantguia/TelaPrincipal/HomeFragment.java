@@ -10,11 +10,12 @@ import android.widget.ImageButton;
 import androidx.fragment.app.Fragment;
 
 import com.example.valorantguia.R;
-import com.example.valorantguia.maps.bind.bindMapa;
-import com.example.valorantguia.maps.sunset.sunsetMapa;
-import com.example.valorantguia.maps.icebox.iceboxMapa;
 import com.example.valorantguia.maps.ascent.ascentMapa;
+import com.example.valorantguia.maps.bind.bindMapa;
+import com.example.valorantguia.maps.icebox.iceboxMapa;
 import com.example.valorantguia.maps.split.splitMapa;
+import com.example.valorantguia.maps.sunset.sunsetMapa;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,9 +28,6 @@ public class HomeFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    private String mParam1;
-    private String mParam2;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -48,8 +46,8 @@ public class HomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 

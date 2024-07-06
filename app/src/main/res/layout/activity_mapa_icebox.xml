@@ -58,7 +58,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/BtnBrimstoneAscent"
+                    android:id="@+id/btnBrimstoneIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -84,7 +84,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_phoenix"
+                    android:id="@+id/btnphoenixIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -110,7 +110,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_sage"
+                    android:id="@+id/btnSageIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -136,7 +136,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_sova"
+                    android:id="@+id/btnSovaIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -162,7 +162,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_viper"
+                    android:id="@+id/btnViperIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -188,7 +188,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_cypher"
+                    android:id="@+id/btnCypherIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -214,7 +214,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_reyna"
+                    android:id="@+id/btnReynaIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -240,7 +240,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_killjoy"
+                    android:id="@+id/btnKilljoyIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -266,7 +266,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_omen"
+                    android:id="@+id/btnOmenIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -292,7 +292,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_jett"
+                    android:id="@+id/btnJettIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -318,7 +318,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_breach"
+                    android:id="@+id/btnBreachIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -344,7 +344,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_skye"
+                    android:id="@+id/btnSkyeIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -370,7 +370,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_yoru"
+                    android:id="@+id/btnYoruIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -396,7 +396,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_astra"
+                    android:id="@+id/btnAstraIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -422,7 +422,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_kayo"
+                    android:id="@+id/btnKayoIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -448,7 +448,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_chamber"
+                    android:id="@+id/btnChamberIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -474,7 +474,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_neon"
+                    android:id="@+id/btnNeonIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -500,7 +500,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_fade"
+                    android:id="@+id/btnFadeIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -526,7 +526,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_harbor"
+                    android:id="@+id/btnHardorIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -552,7 +552,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_gekko"
+                    android:id="@+id/btnGekkoIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
@@ -578,7 +578,7 @@
                 android:layout_marginBottom="20dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton_deadlock"
+                    android:id="@+id/btnDeadlockIcebox"
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"

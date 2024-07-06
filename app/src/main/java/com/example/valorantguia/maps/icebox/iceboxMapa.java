@@ -47,27 +47,27 @@ public class iceboxMapa extends AppCompatActivity {
             return insets;
         });
         // Encontre todos os ImageButtons no layout e configure os listeners
-        setupAgentButton(R.id.btnBrimstoneSunset, AgentsBrimstone.class);
-        setupAgentButton(R.id.btnphoenixSunset, AgentsPhoenix.class);
-        setupAgentButton(R.id.btnSageSunset, AgentsSage.class);
-        setupAgentButton(R.id.btnSovaSunset, AgentsSova.class);
-        setupAgentButton(R.id.btnViperSunset, AgentsViper.class);
-        setupAgentButton(R.id.btnCypherSunset, AgentsCypher.class);
-        setupAgentButton(R.id.btnReynaSunset, AgentsReyna.class);
-        setupAgentButton(R.id.btnKilljoySunset, AgentsKilljoy.class);
-        setupAgentButton(R.id.btnOmenSunset, AgentsOmen.class);
-        setupAgentButton(R.id.btnJettSunset, AgentsJett.class);
-        setupAgentButton(R.id.btnBreachSunset, AgentsBreach.class);
-        setupAgentButton(R.id.btnSkyeSunset, AgentsSkye.class);
-        setupAgentButton(R.id.btnYoruSunset, AgentsYoru.class);
-        setupAgentButton(R.id.btnAstraSunset, AgentsAstra.class);
-        setupAgentButton(R.id.btnKayoSunset, AgentsKayo.class);
-        setupAgentButton(R.id.btnChamberSunset, AgentsChamber.class);
-        setupAgentButton(R.id.btnNeonSunset, AgentsNeon.class);
-        setupAgentButton(R.id.btnFadeSunset, AgentsFade.class);
-        setupAgentButton(R.id.btnHardorSunset, AgentsHardor.class);
-        setupAgentButton(R.id.btnGekkoSunset, AgentsGekko.class);
-        setupAgentButton(R.id.btnDeadlockSunset, AgentsDeadlock.class);
+        setupAgentButton(R.id.btnBrimstoneIcebox, AgentsBrimstone.class);
+        setupAgentButton(R.id.btnphoenixIcebox, AgentsPhoenix.class);
+        setupAgentButton(R.id.btnSageIcebox, AgentsSage.class);
+        setupAgentButton(R.id.btnSovaIcebox, AgentsSova.class);
+        setupAgentButton(R.id.btnViperIcebox, AgentsViper.class);
+        setupAgentButton(R.id.btnCypherIcebox, AgentsCypher.class);
+        setupAgentButton(R.id.btnReynaIcebox, AgentsReyna.class);
+        setupAgentButton(R.id.btnKilljoyIcebox, AgentsKilljoy.class);
+        setupAgentButton(R.id.btnOmenIcebox, AgentsOmen.class);
+        setupAgentButton(R.id.btnJettIcebox, AgentsJett.class);
+        setupAgentButton(R.id.btnBreachIcebox, AgentsBreach.class);
+        setupAgentButton(R.id.btnSkyeIcebox, AgentsSkye.class);
+        setupAgentButton(R.id.btnYoruIcebox, AgentsYoru.class);
+        setupAgentButton(R.id.btnAstraIcebox, AgentsAstra.class);
+        setupAgentButton(R.id.btnKayoIcebox, AgentsKayo.class);
+        setupAgentButton(R.id.btnChamberIcebox, AgentsChamber.class);
+        setupAgentButton(R.id.btnNeonIcebox, AgentsNeon.class);
+        setupAgentButton(R.id.btnFadeIcebox, AgentsFade.class);
+        setupAgentButton(R.id.btnHardorIcebox, AgentsHardor.class);
+        setupAgentButton(R.id.btnGekkoIcebox, AgentsGekko.class);
+        setupAgentButton(R.id.btnDeadlockIcebox, AgentsDeadlock.class);
     }
 
     private void setupAgentButton(int buttonId, final Class<?> agentClass) {

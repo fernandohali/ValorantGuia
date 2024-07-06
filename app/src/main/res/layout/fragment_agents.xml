@@ -23,7 +23,6 @@
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
-
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
