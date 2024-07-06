@@ -167,6 +167,7 @@
 
             </FrameLayout>
 
+            <!-- WebView para o primeiro vídeo -->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,12 +175,27 @@
                 tools:ignore="WebViewLayout">
 
                 <WebView
-                    android:id="@+id/video_Attack_sunset"
+                    android:id="@+id/video_Attack_brimstone_sunset1"
                     android:layout_width="match_parent"
                     android:layout_height="200dp" />
 
             </FrameLayout>
 
+            <!-- WebView para o segundo vídeo -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_brimstone_sunset2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </FrameLayout>
+
+           
         </LinearLayout>
     </ScrollView>
 
