@@ -2,29 +2,27 @@ package com.example.valorantguia.TelaPrincipal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.valorantguia.R;
+import com.example.valorantguia.SharedViewModel;
 import com.example.valorantguia.maps.ascent.ascentMapa;
 import com.example.valorantguia.maps.bind.bindMapa;
 import com.example.valorantguia.maps.icebox.iceboxMapa;
 import com.example.valorantguia.maps.split.splitMapa;
 import com.example.valorantguia.maps.sunset.sunsetMapa;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class HomeFragment extends Fragment {
 
     ImageButton btnMapaBind, btnMapaSunset, btnMapaIcebox, btnMapaAscent, btnMapaSplit;
+    private SharedViewModel sharedViewModel;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -49,6 +47,7 @@ public class HomeFragment extends Fragment {
             String mParam1 = getArguments().getString(ARG_PARAM1);
             String mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
     }
 
     @Override
@@ -64,8 +63,16 @@ public class HomeFragment extends Fragment {
         btnMapaSplit = view.findViewById(R.id.btnMapaSplit);
 
         // Configurar os listeners dos ImageButtons
-        btnMapaBind.setOnClickListener(v -> bindMapaClic());
-        btnMapaSunset.setOnClickListener(v -> sunsetMapaClic());
+        btnMapaSunset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sunsetMapaClic();
+                Log.d("HomeFragment", "Sunset button clicked");
+                sharedViewModel.setMapaSunsetClicked(true); // Certifique-se de que isso está sendo chamado corretamente
+            }
+        });
+
+
         btnMapaIcebox.setOnClickListener(v -> iceboxMapaClic());
         btnMapaAscent.setOnClickListener(v -> ascentMapaClic());
         btnMapaSplit.setOnClickListener(v -> splitMapaClic());
