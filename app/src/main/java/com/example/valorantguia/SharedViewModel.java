@@ -7,21 +7,25 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class SharedViewModel extends ViewModel {
-    private final MutableLiveData<Boolean> isMapaSunsetClicked = new MutableLiveData<>(true);
-    private final MutableLiveData<Boolean> isMapaIceboxClicked = new MutableLiveData<>(true);
-    private final MutableLiveData<Boolean> isMapaBindClicked = new MutableLiveData<>(true);
-    private final MutableLiveData<Boolean> isMapaAscentClicked = new MutableLiveData<>(true);
-    private final MutableLiveData<Boolean> isMapaSplitClicked = new MutableLiveData<>(true);
+    private final MutableLiveData<Boolean> _isMapaSunsetClicked = new MutableLiveData<>(false);
+    private final MutableLiveData<Boolean> _isMapaIceboxClicked = new MutableLiveData<>(false);
+    private final MutableLiveData<Boolean> _isMapaBindClicked = new MutableLiveData<>(false);
+    private final MutableLiveData<Boolean> _isMapaAscentClicked = new MutableLiveData<>(false);
+    private final MutableLiveData<Boolean> _isMapaSplitClicked = new MutableLiveData<>(false);
+
+    private final LiveData<Boolean> isMapaSunsetClicked = _isMapaSunsetClicked;
+    private final LiveData<Boolean> isMapaIceboxClicked = _isMapaIceboxClicked;
+    private final LiveData<Boolean> isMapaBindClicked = _isMapaBindClicked;
+    private final LiveData<Boolean> isMapaAscentClicked = _isMapaAscentClicked;
+    private final LiveData<Boolean> isMapaSplitClicked = _isMapaSplitClicked;
 
     // Métodos para definir o estado do clique para cada mapa
     public void setMapaSunsetClicked(boolean clicked) {
-        if (clicked) {
-            isMapaSunsetClicked.setValue(true);
-            isMapaIceboxClicked.setValue(false); // Garante que apenas um dos mapas está selecionado
-            isMapaBindClicked.setValue(false);
-            isMapaAscentClicked.setValue(false);
-            isMapaSplitClicked.setValue(false);
+        if (Boolean.FALSE.equals(isMapaSunsetClicked.getValue()) && clicked) {
+            _isMapaSunsetClicked.setValue(true);
             Log.d("SharedViewModel", "Mapa Sunset selecionado");
+        } else if (!clicked) {
+            _isMapaSunsetClicked.setValue(false);
         }
     }
 
@@ -31,13 +35,11 @@ public class SharedViewModel extends ViewModel {
     }
 
     public void setMapaIceboxClicked(boolean clicked) {
-        if (clicked) {
-            isMapaIceboxClicked.setValue(true);
-            isMapaSunsetClicked.setValue(false); // Garante que apenas um dos mapas está selecionado
-            isMapaBindClicked.setValue(false);
-            isMapaAscentClicked.setValue(false);
-            isMapaSplitClicked.setValue(false);
+        if (Boolean.FALSE.equals(isMapaIceboxClicked.getValue()) && clicked) {
+            _isMapaIceboxClicked.setValue(true);
             Log.d("SharedViewModel", "Mapa Icebox selecionado");
+        } else if (!clicked) {
+            _isMapaIceboxClicked.setValue(false);
         }
     }
 
@@ -47,13 +49,11 @@ public class SharedViewModel extends ViewModel {
     }
 
     public void setMapaBindClicked(boolean clicked) {
-        if (clicked) {
-            isMapaBindClicked.setValue(true);
-            isMapaSunsetClicked.setValue(false); // Garante que apenas um dos mapas está selecionado
-            isMapaIceboxClicked.setValue(false);
-            isMapaAscentClicked.setValue(false);
-            isMapaSplitClicked.setValue(false);
+        if (Boolean.FALSE.equals(isMapaBindClicked.getValue()) && clicked) {
+            _isMapaBindClicked.setValue(true);
             Log.d("SharedViewModel", "Mapa Bind selecionado");
+        } else if (!clicked) {
+            _isMapaBindClicked.setValue(false);
         }
     }
 
@@ -63,13 +63,11 @@ public class SharedViewModel extends ViewModel {
     }
 
     public void setMapaAscentClicked(boolean clicked) {
-        if (clicked) {
-            isMapaAscentClicked.setValue(true);
-            isMapaSunsetClicked.setValue(false); // Garante que apenas um dos mapas está selecionado
-            isMapaIceboxClicked.setValue(false);
-            isMapaBindClicked.setValue(false);
-            isMapaSplitClicked.setValue(false);
+        if (Boolean.FALSE.equals(isMapaAscentClicked.getValue()) && clicked) {
+            _isMapaAscentClicked.setValue(true);
             Log.d("SharedViewModel", "Mapa Ascent selecionado");
+        } else if (!clicked) {
+            _isMapaAscentClicked.setValue(false);
         }
     }
 
@@ -79,13 +77,11 @@ public class SharedViewModel extends ViewModel {
     }
 
     public void setMapaSplitClicked(boolean clicked) {
-        if (clicked) {
-            isMapaSplitClicked.setValue(true);
-            isMapaSunsetClicked.setValue(false); // Garante que apenas um dos mapas está selecionado
-            isMapaIceboxClicked.setValue(false);
-            isMapaBindClicked.setValue(false);
-            isMapaAscentClicked.setValue(false);
+        if (Boolean.FALSE.equals(isMapaSplitClicked.getValue()) && clicked) {
+            _isMapaSplitClicked.setValue(true);
             Log.d("SharedViewModel", "Mapa Split selecionado");
+        } else if (!clicked) {
+            _isMapaSplitClicked.setValue(false);
         }
     }
 

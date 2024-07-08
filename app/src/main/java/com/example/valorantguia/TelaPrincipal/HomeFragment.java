@@ -86,7 +86,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 bindMapaClic();
                 Log.d("HomeFragment", "Bind button clicked");
-                sharedViewModel.setMapaBindClicked(true);
+               // sharedViewModel.setMapaBindClicked(true);
             }
         });
 
@@ -95,7 +95,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 ascentMapaClic();
                 Log.d("HomeFragment", "Ascent button clicked");
-                sharedViewModel.setMapaAscentClicked(true);
+                //sharedViewModel.setMapaAscentClicked(true);
             }
         });
 
@@ -104,7 +104,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 splitMapaClic();
                 Log.d("HomeFragment", "Split button clicked");
-                sharedViewModel.setMapaSplitClicked(true);
+               // sharedViewModel.setMapaSplitClicked(true);
             }
         });
 

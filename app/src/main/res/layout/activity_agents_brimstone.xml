@@ -168,19 +168,17 @@
 
             </FrameLayout>
 
-<!--            &lt;!&ndash; activity_agents_brimstone.xml &ndash;&gt;-->
-<!--            <TextView-->
-<!--                android:id="@+id/textMapaSelecionado"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                android:fontFamily="@font/valorant_font"-->
-<!--                android:importantForAccessibility="no"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textSize="26sp" />-->
-
-
+            <!-- activity_agents_brimstone.xml -->
+            <TextView
+                android:id="@+id/textMapaSelecionado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/valorant_font"
+                android:importantForAccessibility="no"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
 
             <!-- WebView para o primeiro vídeo -->
             <FrameLayout
@@ -237,6 +235,6 @@
             </FrameLayout>
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
