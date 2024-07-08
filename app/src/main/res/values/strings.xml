@@ -6,7 +6,7 @@
     <string name="txt_senha">SENHA</string>
     <string name="btn_login">LOGAR</string>
     <string name="btn_sair">Sair</string>
-    <string name="txt_cadastrar">Cadastrar usuário</string>
+    <string name="txt_cadastrar">CADASTRAR INVOCADOR</string>
     <string name="txt_voltar">Voltar</string>
 
     <string name="txt_vavaGuia">MAPAS</string>
@@ -68,7 +68,7 @@
     <string name="agents_deadlock">DEADLOCK</string>
     <string name="agents_iso">ISO</string>
     <string name="agents_clove">CLOVE</string>
-
+    <string name="title_cadastrar">CADASTRAR INVOCADOR</string>
 
     <string name="txt_button_attack">ATAQUE</string>
     <string name="txt_button_defense">DEFESA</string>

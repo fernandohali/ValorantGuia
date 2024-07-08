@@ -4,8 +4,11 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editLogin, editSenha;
 
     Button btnLogin;
+    TextView txtCadastrar; // Texto para navegação para a tela de cadastro
 
 
     @SuppressLint("NonConstantResourceId")
@@ -40,16 +44,23 @@ public class MainActivity extends AppCompatActivity {
         editLogin = findViewById(R.id.editLogin);
         editSenha = findViewById(R.id.editSenha);
         btnLogin = findViewById(R.id.btnLogin);
+        txtCadastrar = findViewById(R.id.txtCadastrar);
 
         btnLogin.setOnClickListener(v -> {
             logar();
 
         });
+
+        // Adicionar eventos aos componentes
+        txtCadastrar.setOnClickListener((View view) -> { // Usando Lambda Function
+            Intent intent = new Intent(MainActivity.this, Cadastro.class);
+            startActivity(intent); // Navega para a tela de cadastro
+        });
     }
 
     private void logar() {
         // Verifica se os campos foram preenchidos
-        /*if (validarCampos() == false) {
+        if (validarCampos() == false) {
             //Toast.makeText(this,"FALHOU",Toast.LENGTH_SHORT).show();
             return;
         }
@@ -61,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if (validarLogin(login, senha) == false) {
             Toast.makeText(this, "Dados de login incorretos", Toast.LENGTH_LONG).show();
             return;
-        }*/
+        }
         // Se a validação for bem-sucedida, muda para a tela principal do administrador
         Intent intent = new Intent(this, TelaPrincipalActivity.class);
         startActivity(intent);
@@ -93,21 +104,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    private void replaceFragment(Fragment fragment) {
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.frame_layout, fragment);
-//        fragmentTransaction.commit();
-//    }
-//
-//    private boolean onNavigationItemSelected(MenuItem item) {
-//        if (item.getItemId() == R.id.home) {
-//            replaceFragment(new HomeFragment());
-//            return true;
-//        } else if (item.getItemId() == R.id.agentes) {
-//            replaceFragment(new AgentsFragment());
-//            return true;
-//        }
-//        return false;
-//    }
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
+    }
+
+    private boolean onNavigationItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.home) {
+            replaceFragment(new HomeFragment());
+            return true;
+        } else if (item.getItemId() == R.id.agents) {
+            replaceFragment(new AgentsFragment());
+            return true;
+        }
+        return false;
+    }
 }

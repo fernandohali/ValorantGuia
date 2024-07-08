@@ -83,7 +83,7 @@
                         android:layout_margin="4dp"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/abilities_phoenix_chama" />
+                        app:srcCompat="@drawable/abilities_phoenix_bola_curva" />
 
                     <ImageButton
                         android:id="@+id/btnButtonPAREDE"
@@ -92,7 +92,7 @@
                         android:layout_margin="4dp"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/abilities_phoenix_parede" />
+                        app:srcCompat="@drawable/abilities_phoenix_maos_quentes" />
 
                     <ImageButton
                         android:id="@+id/btnButtonLABAREDA"
@@ -110,7 +110,7 @@
                         android:layout_margin="4dp"
                         android:background="@null"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/abilities_phoenix_ressurgir" />
+                        app:srcCompat="@drawable/abilities_phoenix_renascimento" />
                 </LinearLayout>
 
             </FrameLayout>
