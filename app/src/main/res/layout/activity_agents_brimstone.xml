@@ -168,6 +168,20 @@
 
             </FrameLayout>
 
+<!--            &lt;!&ndash; activity_agents_brimstone.xml &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/textMapaSelecionado"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:fontFamily="@font/valorant_font"-->
+<!--                android:importantForAccessibility="no"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="26sp" />-->
+
+
+
             <!-- WebView para o primeiro vídeo -->
             <FrameLayout
                 android:layout_width="match_parent"
@@ -196,7 +210,31 @@
 
             </FrameLayout>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
 
+                <WebView
+                    android:id="@+id/video_Attack_brimstone_icebox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_brimstone_icebox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </FrameLayout>
 
         </LinearLayout>
     </ScrollView>

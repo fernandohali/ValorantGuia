@@ -58,7 +58,7 @@
                     android:layout_width="332dp"
                     android:layout_height="64dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button_click_effect_agents_brimstone"
+                    android:background="@drawable/button_click_effect_maps_sunset"
                     android:contentDescription="@string/agents_brimstone"
                     tools:ignore="ImageContrastCheck" />
 

@@ -68,14 +68,45 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 sunsetMapaClic();
                 Log.d("HomeFragment", "Sunset button clicked");
-                sharedViewModel.setMapaSunsetClicked(true); // Certifique-se de que isso está sendo chamado corretamente
+                sharedViewModel.setMapaSunsetClicked(true);
             }
         });
 
+        btnMapaIcebox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iceboxMapaClic();
+                Log.d("HomeFragment", "Icebox button clicked");
+                sharedViewModel.setMapaIceboxClicked(true);
+            }
+        });
 
-        btnMapaIcebox.setOnClickListener(v -> iceboxMapaClic());
-        btnMapaAscent.setOnClickListener(v -> ascentMapaClic());
-        btnMapaSplit.setOnClickListener(v -> splitMapaClic());
+        btnMapaBind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bindMapaClic();
+                Log.d("HomeFragment", "Bind button clicked");
+                sharedViewModel.setMapaBindClicked(true);
+            }
+        });
+
+        btnMapaAscent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ascentMapaClic();
+                Log.d("HomeFragment", "Ascent button clicked");
+                sharedViewModel.setMapaAscentClicked(true);
+            }
+        });
+
+        btnMapaSplit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                splitMapaClic();
+                Log.d("HomeFragment", "Split button clicked");
+                sharedViewModel.setMapaSplitClicked(true);
+            }
+        });
 
         return view;
     }

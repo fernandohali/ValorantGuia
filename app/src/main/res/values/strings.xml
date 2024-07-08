@@ -73,5 +73,10 @@
     <string name="txt_button_attack">ATAQUE</string>
     <string name="txt_button_defense">DEFESA</string>
 
+    <string name="nome_mapa_sunset">Sunset</string>
+    <string name="nome_mapa_icebox">Icebox</string>
+    <!-- Adicione outros nomes de mapa conforme necessário -->
+    <string name="mapa_nao_selecionado">Nenhum mapa selecionado</string>
+
 
 </resources>
