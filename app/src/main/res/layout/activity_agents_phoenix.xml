@@ -5,6 +5,231 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#101823"
     tools:context=".maps.AgentsMapas.AgentsPhoenix">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/valorant_font"
+                    android:importantForAccessibility="no"
+                    android:text="@string/agents_phoenix"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <!-- FrameLayout com imagem e overlay -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="359dp"
+                android:layout_marginBottom="30dp">
+
+                <!-- Imagem principal -->
+                <ImageView
+                    android:id="@+id/imageAgentPhoenix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/agent_phoenix_play" />
+
+                <!-- Overlay -->
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/card" />
+
+                <!-- Botões de habilidades -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnButtonCHAMA"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/abilities_phoenix_chama" />
+
+                    <ImageButton
+                        android:id="@+id/btnButtonPAREDE"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/abilities_phoenix_parede" />
+
+                    <ImageButton
+                        android:id="@+id/btnButtonLABAREDA"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/abilities_phoenix_labareda" />
+
+                    <ImageButton
+                        android:id="@+id/btnButtonRESSURGIR"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/abilities_phoenix_ressurgir" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- Botão de ataque -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/btnAttackPhoenix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    app:srcCompat="@drawable/buttom_click_effect_evento_attack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txt_button_attack"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Botão de defesa -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/btnDefensePhoenix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    app:srcCompat="@drawable/buttom_click_effect_evento_defense" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txt_button_defense"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- activity_agents_phoenix.xml -->
+            <TextView
+                android:id="@+id/textMapaSelecionado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/valorant_font"
+                android:importantForAccessibility="no"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <!-- WebView para o primeiro vídeo -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_phoenix_sunset1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </FrameLayout>
+
+            <!-- WebView para o segundo vídeo -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_phoenix_sunset2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_phoenix_icebox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/video_Attack_phoenix_icebox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

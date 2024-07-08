@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.valorantguia.R;
-import com.example.valorantguia.SharedViewModel;
 import com.example.valorantguia.maps.ascent.ascentMapa;
 import com.example.valorantguia.maps.bind.bindMapa;
 import com.example.valorantguia.maps.icebox.iceboxMapa;
@@ -22,7 +21,7 @@ import com.example.valorantguia.maps.sunset.sunsetMapa;
 public class HomeFragment extends Fragment {
 
     ImageButton btnMapaBind, btnMapaSunset, btnMapaIcebox, btnMapaAscent, btnMapaSplit;
-    private SharedViewModel sharedViewModel;
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -47,7 +46,7 @@ public class HomeFragment extends Fragment {
             String mParam1 = getArguments().getString(ARG_PARAM1);
             String mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+
     }
 
     @Override
@@ -68,7 +67,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 sunsetMapaClic();
                 Log.d("HomeFragment", "Sunset button clicked");
-                sharedViewModel.setMapaSunsetClicked(true);
+
             }
         });
 
@@ -77,7 +76,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 iceboxMapaClic();
                 Log.d("HomeFragment", "Icebox button clicked");
-                sharedViewModel.setMapaIceboxClicked(true);
+
             }
         });
 
@@ -118,8 +117,10 @@ public class HomeFragment extends Fragment {
 
     private void sunsetMapaClic() {
         Intent intent = new Intent(requireActivity(), sunsetMapa.class);
+        intent.putExtra("mapSelected", "Sunset"); // Passa o valor do mapa Sunset
         startActivity(intent);
     }
+
 
     private void iceboxMapaClic() {
         Intent intent = new Intent(requireActivity(), iceboxMapa.class);

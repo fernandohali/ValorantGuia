@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -35,9 +36,12 @@ import com.example.valorantguia.maps.AgentsMapas.AgentsYoru;
 
 public class sunsetMapa extends AppCompatActivity {
 
+    private static final String MAP_NAME = "Sunset"; // Nome do mapa
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_mapa_sunset);
 
         // Configuração da borda da tela
@@ -83,6 +87,7 @@ public class sunsetMapa extends AppCompatActivity {
 
     private void openAgentActivity(Class<?> agentClass) {
         Intent intent = new Intent(this, agentClass);
+        intent.putExtra("mapName", MAP_NAME); // Passa o nome do mapa como extra
         startActivity(intent);
     }
 }

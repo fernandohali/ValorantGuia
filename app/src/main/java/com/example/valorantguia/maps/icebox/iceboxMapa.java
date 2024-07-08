@@ -36,6 +36,8 @@ import com.example.valorantguia.maps.AgentsMapas.AgentsYoru;
 
 public class iceboxMapa extends AppCompatActivity {
 
+    private static final String MAP_NAME = "Icebox"; // Nome do mapa
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +84,7 @@ public class iceboxMapa extends AppCompatActivity {
 
     private void openAgentActivity(Class<?> agentClass) {
         Intent intent = new Intent(this, agentClass);
+        intent.putExtra("mapName", MAP_NAME); // Passa o nome do mapa como extra
         startActivity(intent);
     }
 }
