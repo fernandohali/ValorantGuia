@@ -29,7 +29,7 @@ public class AgentsBrimstone extends AppCompatActivity {
     private WebView webView_Attack_Incendiaria_brimstone_icebox2;
     private ImageButton btnAttackBrimstone;
     private ImageButton btnButtonINCENDIARIO;
-
+    private SharedViewModel sharedViewModel;
     private TextView textMapaSelecionado;
 
     @Override
@@ -37,7 +37,8 @@ public class AgentsBrimstone extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agents_brimstone);
 
-
+        // Inicialização do ViewModel
+        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
 
         // Solicitar permissão MODIFY_AUDIO_SETTINGS se não estiver concedida
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.MODIFY_AUDIO_SETTINGS) != PackageManager.PERMISSION_GRANTED) {
@@ -65,18 +66,40 @@ public class AgentsBrimstone extends AppCompatActivity {
         configureWebView_Attack_Incendiaria_brimstone_icebox(webView_Attack_Incendiaria_brimstone_icebox1, "https://www.youtube.com/embed/M5-M4TKI8MY");
         configureWebView_Attack_Incendiaria_brimstone_icebox(webView_Attack_Incendiaria_brimstone_icebox2, "https://www.youtube.com/embed/OqjFpDqGCac");
 
+        // Observando mudanças no clique do mapa Sunset
+        sharedViewModel.getMapaSunsetClicked().observe(this, isClicked -> {
+            if (isClicked) {
+                textMapaSelecionado.setText(getString(R.string.nome_mapa_sunset));
+                filterVideosSunset();
+            } else {
+                webView_Attack_Incendiaria_brimstone_sunset1.setVisibility(View.GONE);
+                webView_Attack_Incendiaria_brimstone_sunset2.setVisibility(View.GONE);
+                // textMapaSelecionado.setText(""); // Limpar o texto do mapa Sunset se necessário
+            }
+        });
 
+        // Observando mudanças no clique do mapa Icebox
+        sharedViewModel.getMapaIceboxClicked().observe(this, isClicked -> {
+            if (isClicked) {
+                textMapaSelecionado.setText(getString(R.string.nome_mapa_icebox));
+                filterVideosIcebox();
+            } else {
+                webView_Attack_Incendiaria_brimstone_icebox1.setVisibility(View.GONE);
+                webView_Attack_Incendiaria_brimstone_icebox2.setVisibility(View.GONE);
+                // textMapaSelecionado.setText(""); // Limpar o texto do mapa Icebox se necessário
+            }
+        });
 
         // Configurando o clique no botão de ataque
         btnAttackBrimstone.setOnClickListener(v -> {
             btnAttackBrimstone.setSelected(!btnAttackBrimstone.isSelected());
-
+            sharedViewModel.setMapaSunsetClicked(btnAttackBrimstone.isSelected());
         });
 
         // Configurando o clique no botão INCENDIARIO
         btnButtonINCENDIARIO.setOnClickListener(v -> {
             btnButtonINCENDIARIO.setSelected(!btnButtonINCENDIARIO.isSelected());
-
+            sharedViewModel.setMapaIceboxClicked(btnButtonINCENDIARIO.isSelected());
         });
 
     }
