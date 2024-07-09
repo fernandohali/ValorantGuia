@@ -75,7 +75,7 @@ public class DialogFragmentExample extends DialogFragment {
             try {
                 // Obter instância do banco de dados usando Room
                 Context context = requireContext();
-                DataBase db = Room.databaseBuilder(context, DataBase.class, "BaseDeDados").build();
+                DataBase db = Room.databaseBuilder(context, DataBase.class, "Base De Dados").build();
 
                 // Obter DAO do Invocador
                 InvocadorDao invocadorDao = db.invocadorDao();
