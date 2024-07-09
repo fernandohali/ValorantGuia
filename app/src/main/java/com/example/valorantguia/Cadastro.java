@@ -1,8 +1,7 @@
 package com.example.valorantguia;
 
-
-
 // Importações necessárias para o funcionamento da Activity
+import android.annotation.SuppressLint;
 import android.graphics.Color; // Para manipulação de cores
 import android.os.Bundle; // Para manipulação de pacotes de dados entre atividades
 import android.view.MotionEvent; // Para manipulação de eventos de toque
@@ -15,15 +14,17 @@ import androidx.activity.EdgeToEdge; // Para permitir o modo Edge-to-Edge
 import androidx.appcompat.app.AppCompatActivity; // Para compatibilidade com atividades antigas
 import androidx.room.Room; // Para construção de banco de dados usando Room
 
-import com.example.valorantguia.database.DataBase; // Para acesso ao banco de dados do aplicativo
-import com.example.valorantguia.database.Usuario; // Para utilização da entidade Usuario
-import com.example.valorantguia.database.UsuarioDao; // Para acesso ao Data Access Object (DAO) do Usuario
+
+import com.example.valorantguia.database.DataBase;
+import com.example.valorantguia.database.Usuario;
+import com.example.valorantguia.database.UsuarioDao;
 
 public class Cadastro extends AppCompatActivity {
     // Declaração de botões e campos de texto
     Button btn_voltar_cadastro, btn_salvar_cadastro;
     EditText edit_nome_cadastro, edit_senha_cadastro, edit_idade_cadastro;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

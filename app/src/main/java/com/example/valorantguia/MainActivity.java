@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         txtCadastrar = findViewById(R.id.txtCadastrar);
 
+
         btnLogin.setOnClickListener(v -> {
             logar();
 

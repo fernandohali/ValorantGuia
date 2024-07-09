@@ -77,6 +77,10 @@
     <string name="nome_mapa_icebox">Icebox</string>
     <!-- Adicione outros nomes de mapa conforme necessário -->
     <string name="mapa_nao_selecionado">Nenhum mapa selecionado</string>
+    <string name="close_dialog">tela\n</string>
+
+    <string name="nome_invocador">INVOCADOR</string>
+    <string name="nome_tag">TAG</string>
 
 
 </resources>
