@@ -25,7 +25,14 @@ public class AgentsBrimstone extends AppCompatActivity {
     private WebView webView_Attack_Incendiaria_brimstone_sunset2;
     private WebView webView_Attack_Incendiaria_brimstone_icebox1;
     private WebView webView_Attack_Incendiaria_brimstone_icebox2;
+
+    private WebView webView_Defesa_Incendiaria_brimstone_sunset1;
+    private WebView webView_Defesa_Incendiaria_brimstone_sunset2;
+    private WebView webView_Defesa_Incendiaria_brimstone_icebox1;
+    private WebView webView_Defesa_Incendiaria_brimstone_icebox2;
+
     private ImageButton btnAttackBrimstone;
+    private ImageButton BtnDefenseBrimstone;
     private ImageButton btnButtonINCENDIARIO;
     private TextView textMapaSelecionado;
 
@@ -52,8 +59,14 @@ public class AgentsBrimstone extends AppCompatActivity {
         webView_Attack_Incendiaria_brimstone_icebox1 = findViewById(R.id.video_Attack_brimstone_icebox1);
         webView_Attack_Incendiaria_brimstone_icebox2 = findViewById(R.id.video_Attack_brimstone_icebox2);
 
+        webView_Defesa_Incendiaria_brimstone_sunset1 = findViewById(R.id.video_Defesa_brimstone_sunset1);
+        webView_Defesa_Incendiaria_brimstone_sunset2 = findViewById(R.id.video_Defesa_brimstone_sunset2);
+        webView_Defesa_Incendiaria_brimstone_icebox1 = findViewById(R.id.video_Defesa_brimstone_icebox1);
+        webView_Defesa_Incendiaria_brimstone_icebox2 = findViewById(R.id.video_Defesa_brimstone_icebox2);
+
         // Encontrar ImageButtons no layout XML
         btnAttackBrimstone = findViewById(R.id.btnAttackBrimstone);
+        BtnDefenseBrimstone = findViewById(R.id.BtnDefenseBrimstone);
         btnButtonINCENDIARIO = findViewById(R.id.btnButtonINCENDIARIO);
 
         // Configurar WebViews para carregar vídeos do YouTube
@@ -62,14 +75,34 @@ public class AgentsBrimstone extends AppCompatActivity {
         configureWebView_Attack_Incendiaria_brimstone_icebox(webView_Attack_Incendiaria_brimstone_icebox1, "https://www.youtube.com/embed/M5-M4TKI8MY");
         configureWebView_Attack_Incendiaria_brimstone_icebox(webView_Attack_Incendiaria_brimstone_icebox2, "https://www.youtube.com/embed/OqjFpDqGCac");
 
+
+        // Videos de defesa do brimstone
+
+        configureWebView_Defesa_Incendiaria_brimstone_sunset(webView_Defesa_Incendiaria_brimstone_sunset1, "https://www.youtube.com/embed/uXKPmTghKNE");
+        configureWebView_Defesa_Incendiaria_brimstone_sunset(webView_Defesa_Incendiaria_brimstone_sunset2, "https://www.youtube.com/embed/z3sgtrAU_LY");
+        configureWebView_Defesa_Incendiaria_brimstone_icebox(webView_Defesa_Incendiaria_brimstone_icebox1, "https://www.youtube.com/embed/M5-M4TKI8MY");
+        configureWebView_Defesa_Incendiaria_brimstone_icebox(webView_Defesa_Incendiaria_brimstone_icebox2, "https://www.youtube.com/embed/OqjFpDqGCac");
+
+
         // Definir a visibilidade inicial dos WebViews como GONE
         webView_Attack_Incendiaria_brimstone_sunset1.setVisibility(View.GONE);
         webView_Attack_Incendiaria_brimstone_sunset2.setVisibility(View.GONE);
         webView_Attack_Incendiaria_brimstone_icebox1.setVisibility(View.GONE);
         webView_Attack_Incendiaria_brimstone_icebox2.setVisibility(View.GONE);
 
+        webView_Defesa_Incendiaria_brimstone_sunset1.setVisibility(View.GONE);
+        webView_Defesa_Incendiaria_brimstone_sunset2.setVisibility(View.GONE);
+        webView_Defesa_Incendiaria_brimstone_icebox1.setVisibility(View.GONE);
+        webView_Defesa_Incendiaria_brimstone_icebox2.setVisibility(View.GONE);
+
         // Configurar clique no botão de ataque
         btnAttackBrimstone.setOnClickListener(v -> {
+            btnAttackBrimstone.setSelected(!btnAttackBrimstone.isSelected());
+            filterVideos(mapName); // Filtrar vídeos com base no mapa selecionado
+        });
+
+        // Configurar clique no botão de defesa
+        BtnDefenseBrimstone.setOnClickListener(v -> {
             btnAttackBrimstone.setSelected(!btnAttackBrimstone.isSelected());
             filterVideos(mapName); // Filtrar vídeos com base no mapa selecionado
         });
@@ -122,6 +155,24 @@ public class AgentsBrimstone extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(videoUrl);
     }
+
+    @SuppressLint("SetJavaScriptEnabled")
+    private void configureWebView_Defesa_Incendiaria_brimstone_sunset(WebView webView, String videoUrl) {
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl(videoUrl);
+    }
+
+    // Configurar WebView para carregar vídeos do YouTube
+    @SuppressLint("SetJavaScriptEnabled")
+    private void configureWebView_Defesa_Incendiaria_brimstone_icebox(WebView webView, String videoUrl) {
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl(videoUrl);
+    }
+
 
     // Lidar com a resposta da solicitação de permissão
     @Override

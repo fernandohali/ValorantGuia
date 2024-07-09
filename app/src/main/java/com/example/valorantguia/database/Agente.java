@@ -4,17 +4,12 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "usuario")
-public class Usuario {
+@Entity(tableName = "agente")
+public class Agente {
+
     @PrimaryKey(autoGenerate = true)
     public int id;
 
-    @ColumnInfo
-    public String login;
-
-    @ColumnInfo
-    public int idade;
-
-    @ColumnInfo
-    public String senha;
+    @ColumnInfo(name = "nomeAgente")
+    public String nomeAgente;
 }

@@ -65,6 +65,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/valorant_font"
                     android:layout_gravity="center"
                     android:padding="8dp"
                     android:text="@string/txt_button_sunset"
@@ -119,6 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:padding="8dp"
+                    android:fontFamily="@font/valorant_font"
                     android:text="@string/txt_button_bind"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
@@ -149,6 +151,7 @@
                     android:layout_gravity="center"
                     android:padding="8dp"
                     android:text="@string/txt_button_ascent"
+                    android:fontFamily="@font/valorant_font"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />

@@ -94,7 +94,7 @@ public class DialogFragmentExample extends DialogFragment {
                     dismiss(); // Fecha o DialogFragmentExample após salvar os dados
                 });
             } catch (Exception e) {
-                // Tratamento de exceção, se necessário
+
                 e.printStackTrace();
             }
         });

@@ -9,11 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.room.Room;
 
 import com.example.valorantguia.R;
+import com.example.valorantguia.database.DataBase;
+import com.example.valorantguia.database.Mapa;
 import com.example.valorantguia.maps.ascent.ascentMapa;
 import com.example.valorantguia.maps.bind.bindMapa;
 import com.example.valorantguia.maps.icebox.iceboxMapa;
@@ -24,6 +28,7 @@ public class HomeFragment extends Fragment {
 
     ImageButton btnMapaBind, btnMapaSunset, btnMapaIcebox, btnMapaAscent, btnMapaSplit;
     private SharedPreferences sharedPreferences;
+    private DataBase db;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -33,6 +38,9 @@ public class HomeFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = requireActivity().getSharedPreferences("dialog_prefs", Context.MODE_PRIVATE);
+
+        // Inicializa o banco de dados
+        db = Room.databaseBuilder(requireContext(), DataBase.class, "valorant_db").allowMainThreadQueries().build();
     }
 
     @Override

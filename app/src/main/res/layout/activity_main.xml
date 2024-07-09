@@ -6,17 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="-18dp"
-    tools:layout_editor_absoluteY="9dp">
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="273dp"
         android:layout_height="269dp"
         android:layout_marginTop="4dp"
-        android:importantForAccessibility="no"
-        android:text="@string/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,14 +22,14 @@
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/valorant_font"
         android:text="@string/txt_login"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/editLogin"
-        app:layout_constraintStart_toStartOf="@+id/txtSenha"
-        app:layout_constraintTop_toBottomOf="@+id/img"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
 
     <EditText
         android:id="@+id/editLogin"
@@ -45,11 +41,11 @@
         android:ems="10"
         android:hint="@string/edit_login"
         android:inputType="text"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLogin"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
 
     <TextView
         android:id="@+id/txtSenha"
@@ -61,11 +57,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/editSenha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editLogin"
-        app:layout_constraintVertical_bias="0.5"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <EditText
         android:id="@+id/editSenha"
@@ -77,11 +72,11 @@
         android:ems="10"
         android:hint="@string/edit_senha"
         android:inputType="textPassword"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSenha"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -100,12 +95,13 @@
         android:id="@+id/txtCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/valorant_font"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="24dp"
         android:text="@string/txt_cadastrar"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
