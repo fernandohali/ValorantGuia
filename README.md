@@ -1,6 +1,3 @@
-Claro! Vou criar um README.md para o seu projeto "Valorant Guia". Aqui está um exemplo que você pode usar e modificar conforme necessário:
-
----
 
 # Valorant Guia
 
